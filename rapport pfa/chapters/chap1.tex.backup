@@ -1,0 +1,750 @@
+%author akira treize
+\chapter{State Of The Art}
+\lettrine[lines=3]{I}{} n this chapter we will see the various cloud solutions (eucalyptus, Open Nebula, Open Stack)
+ offered on the Net as well as platforms for smart phones (IOS, Blackberry, Windows Phone, Android), 
+but our choice will be based on the best solution accessible and available on documentations.
+During our final year project, we will focus on free and open sources software and solutions to others alternative.
+\paragraph{}In this chapter we present the cloud computing in general and the differing layer which composes and
+our choice of cloud solution and platforms.\par
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Cloud Computing}
+\subsection{Introduction}
+Cloud Computing  was a technical resource to handle (servers) rather than a product and to adapt quickly to changes in infrastructure load with complete
+transparent to the administrator and users,whereby shared resources, software,
+ and information are provided to computers and other devices as a metered service over a network (typically the Internet).
+
+In the cloud, the customer is not afraid of the complexity of managing hardware behind its software environment.
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=8cm, height=7cm]{./images/Cloudcomputing.png}
+ \caption{Cloud Computing}
+\end{figure}
+
+
+
+\subsection{the different layers on the cloud :}
+
+Cloud computing is a concept:
+\begin{itemize}
+ \item Deport a remote infrastructure applications and data;
+ \item Abstracting the management of infrastructure and material resources to customers.
+\end{itemize}
+ There was exactly four layers in the cloud classified by use:
+
+\subsubsection{Infrastructure as a Service (IaaS):}
+
+This layer is probably the most important because it rests on it as part of the other layers. It offers the possibility to rent, 
+buy virtual machines, virtual servers on demand, but also storage.
+Here is an example of the company offering IaaS: Amazon EC2 if you want to test, you can create an account and start an instance of type "micro" free for one year.
+Otherwise, it is also possible to create its own layer IaaS, 
+for this it is necessary to use a platform to implement and manage different virtual machines running in the IaaS layer, here are some open source platforms:
+
+\begin {itemize}
+ \item [•]Eucalyptus
+ \item [•]OpenStack
+ \item [•]OpenNebula
+\end {itemize}
+
+Eucalyptus is the platform used by Amazon EC2, OpenNebula is the recommended platform for Europe and developed by a Spanish company, 
+OpenStack is a American platform developed by NASA.
+
+
+\subsubsection{Platform as a Service (PaaS):}
+
+This layer can be based directly on the previous one, it mainly concerns people making web development 
+or web-oriented software. This means that developers can buy, rent a platform to develop their application in a language (Ruby, PHP, Java, ...)
+ or through a particular framework.
+The advantage is that there is no server to configure in-house, everything is ready and when the development is finished, the rented platform can be throw.
+Here is one of the best known examples in the world of PaaS: Google App Engine
+
+
+\subsubsection{Software as a Service (SaaS):}
+
+This is undoubtedly the most famous layer and the most currently used. When you use Google Docs is the layer of SaaS Google services 
+you use without knowing it! Or Drupal Services Garden, it's SaaS.
+It becomes possible to deploy a website, a software without having to do installation, maintenance, etc ... 
+You rent the software, it works and you can use it directly through your browser.
+This layer can also be based on the previous layer and allow the developer to access the application that he has created.
+
+% \subsection{Data as a Service (DaaS):} 
+% \begin{onehalfspace}
+% DaaS is a cousin of Software as a Service, is based on the concept that the data can be provided upon request to the user regardless of the distance between user and supplier data. 
+% Enter data as a service (DaaS), by outsourcing data rather than software, enterprises can effectively have their cake and eat it. 
+% Their data is maintained and served off-site, and independent software can plug into that data pool and use it in any number of ways. 
+% This software can be custom-built, it can be a simple (and familiar) web form or Excel look-up, or it can of course be SaaS.
+% Data as a service offers all the benefits of Software as a Service, but without the same restrictions.
+% The online storage services are used to store data and documents without having to continually increase the number of servers or the size of SAN(Storage Area Network is a specialized network to contribute storage resources).
+% The following services are based on cloud computing:
+% \begin{itemize}
+%  \item [•]Dropbox
+%  \item [•]Amazon Simple Storage Service
+%  \item [•]Google Storage
+%  \item [•]Ubuntu One
+%  \item [•]ETC ...
+% \end{itemize}
+% 
+% \end{onehalfspace}
+\subsection{Deployment Models:} 
+
+Cloud computing can be divided into four different models: public, hybrid,private, and Community .
+ While the four models have common traits , they also have different
+key features that might make one model a better choice to meet your business’s IT needs.Below are the key features of each model.
+
+\subsubsection {Public cloud:}
+
+This type of cloud computing is the traditional model that everyone thinks of when they envision cloud computing. In this model, vendors dynamically allocate resources (hard drive space, RAM, and processor power) on a per-user basis through web applications.
+Salesforce.com and ADP are two well-known vendors that offer public cloud computing
+services.
+
+\begin{itemize}
+\item [•] \textbf {Unlimited access:}
+
+As long as you have internet access and a compatible device such as a smart phone or laptop computer, you can access your data anywhere.
+
+\item [•] \textbf {Unlimited data capacity:} 
+
+Public cloud computing is flexible to meet your business’s growing data storage and processing needs.
+
+\end{itemize}
+
+\subsubsection {Hybrid cloud:}
+
+This model combines your business’s hardware with cloud computing. Generally,
+one of your business applications such as Exchange Server 2007 or Microsoft Dynamics will
+interact with a vendor-hosted service. For example, Cisco, traditionally recognized for networking hardware, offers IronPort Email Security as their hybrid solution and Google, known
+for hosted solution, offers Postini email archiving.
+
+\begin {itemize}
+ \item [•] \textbf {Hardware required}:Hybrid cloud computing requires that you have or purchase hardware to interact with the hosted solution.
+\item  [•] \textbf {Software required}: In addition to hardware requirements, your business will need to have or purchase the software to manipulate and store data.
+\end {itemize}
+\subsubsection {Private cloud:}
+
+Also known as “internal cloud computing”.Private cloud computing is the next generation of virtualization. 
+While similar to virtualization at the server, workstation and
+application levels, private cloud computing has enhanced features that appeal to many businesses. 
+Two examples of private cloud solutions are VMware vCloud and Citrix VDI (Virtual Desktop Infrastructure).
+
+
+\begin {itemize}
+
+ \item [•] \textbf{Increased data security:} You and your business are in control of security since data
+never leaves your network.
+ \item [•] \textbf {Simple compliance enforcement:} Depending upon your vertical market, government
+regulations may prohibit your business from using traditional or hybrid cloud computing.
+Private cloud computing lets you take advantage of cloud computing features while
+keeping all regulated data onsite and secure.
+ \item [•] \textbf {Customized IT network control:} By keeping your cloud private, you are free to
+customize your network to meet your specific business needs.
+\end {itemize}
+% \subsubsection {Community cloud:}
+% \begin {onehalfspace}
+% 
+% The cloud infrastructure is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns ( security, compliance, jurisdiction, etc.). 
+% It may be owned, managed, and operated by one or more of the organizations in the community, 
+% a third party, or some combination of them, and it may exist on or off premises.
+% The costs are spread over fewer users than a public cloud (but more than a private cloud), so only some of the benefits of cloud computing are realized
+% \end {onehalfspace}
+% \begin{center}
+% \includegraphics[width=6cm, height=4cm]{./images/dep.png}
+% \end{center}
+\subsection{Work in the Clouds}
+
+
+Cloud computing can help with large-scale computing requirements or can lead consolidation efforts 
+by virtualizing servers to make more use of existing hardware (and possibly release old hardware from service.) 
+People also use cloud computing for collaboration because of the high availability through networked computers. 
+Productivity suites for word processing, number crunching, and email communications, and more are also available through cloud computing.
+ Cloud computing also avails additional storage to the cloud user, 
+avoiding the need for additional hard drives on your desktop and enabling access to large data storage capacity online in the cloud.
+ 
+\subsection{Conclusion}
+\paragraph{} In this section we present the cloud computing in general and the differing layer which composes.
+ In the two sections that follow this one, 
+we will present the different cloud computing solutions and platforms of different smart phone 
+and of course our choice we will adopt for our final project year.\par
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Platform}
+\subsection{Eucalyptus:}
+
+\begin{figure}[!h]
+  \center
+  \includegraphics{./images/Eucalyptus-Logo.jpg}
+  
+\end{figure}
+
+ 
+
+
+
+\subsubsection{Introduction:}
+
+
+\paragraph{}Eucalyptus is a software available under GPL that helps in creating and managing a private or even a publicly accessible cloud.
+ It provides an EC2 compatible cloud computing platform and S3 compatible cloud storage platform. 
+Eucalyptus has become very popular and is seen as one of the key open source cloud platforms.
+ Since Eucalyptus makes its services available through EC2/S3 compatible APIs, the client tools written for AWS can be used with Eucalyptus as well.
+\subsubsection{Components of Eucalyptus}
+A configuration based on Eucalyptus cloud is composed of five main types of components.
+
+\paragraph{Node Controller (NC):}The NC (through the functionality of a hypervisor) controls VM activities,
+ including the execution, inspection, and termination of VM instances.
+\paragraph{Cluster Controller (CC):}
+The CC controls the execution of virtual machines (VMs) running on the nodes and manages the virtual networking between VMs and between VMs and external users.
+\paragraph{Cloud Controller (CLC):}The CLC is responsible for exposing and managing the underlying virtualized resources (machines (servers),
+ network, and storage) via user-facing APIs. 
+Currently, the CLC exports a well-defined industry standard API (Amazon EC2) and via a Web-based user interface.
+\paragraph{Storage Controller (SC):}The SC provides block-level network storage that can be dynamically attached by VMs. 
+The current implementation of the SC supports the Amazon Elastic Block Storage (EBS) semantics.
+\paragraph{ Walrus Storage Controller (WS3):}WS3 provides a simple persistent storage service using API REST 4 and SOAP 5 and it's compatible with the API S3
+It provides three main functions:
+\begin{itemize}
+ \item Storing virtual machine images.
+ \item Storage of images taken in operation at one time.
+ \item Store files and service using the S3 API.
+\end{itemize}
+In fact, WS3 can be considered as a simple file storage system.
+
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=12cm, height=9cm]{./images/ComponentsEucalyptus.png}
+ \caption{Eucalyptus components}
+\end{figure}
+
+
+
+\subsubsection{Eucalyptus Software architecture:}
+
+
+The Eucalyptus cloud computing platform has five high-level components: 
+Cloud Controller (CLC), Cluster Controller (CC), Walrus, Storage Controller (SC) and Node Controller (NC).
+ Each high-level system component has its own Web interface and is implemented as a stand-alone Web service. 
+This has two major advantages: 
+First, each Web service exposes a well-defined language-agnostic API in the form of a WSDL 
+document containing both the operations that the service can perform and the input/output data structures.
+Second, Eucalyptus leverages existing Web-service features such as security policies (WSS) for secure communication between components 
+and relies on industry-standard web-services software packages.
+
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=10cm, height=5cm]{./images/EucalyptusArchitecture.png}
+ \caption{Architecture Eucalyptus}
+\end{figure}
+
+
+
+
+In the diagram, we see that the cloud controller (CLC) and the Walrus are high-level components, with each installation in a cloud. Then the other components are divided
+the various clusters that you want to use.
+There are three main ways to deploy Eucalyptus:
+\begin{itemize}
+ \item Installing from packages.
+ \item Installation from source.
+ \item Installation using the Ubuntu Enterprise Cloud.
+\end{itemize}
+\subsubsection{Conclusion: }
+Eucalyptus is a mature solution that allows the installation of a cloud infrastructure as easily as we stay in the limits of his operating.
+% \subsubsection{ Prerequis:}
+% \begin{onehalfspace}
+% \subsubsection{The installation of the following:}
+% 
+% \begin{itemize}
+%  \item Storage Controller (SC)
+%  \item Cluster Controller (CC)
+%  \item Walrus Storage Controller (WS3)
+%  \item Cloud Controller (CLC)
+% \end{itemize}
+% 
+% 
+% \subsubsection{minimum hardware configuration:}
+%  \begin{itemize}
+%   \item CPU 1GHz
+%   \item RAM 2GB
+%   \item 40GB Disk Space
+%   \item Hard Drive IDE 5400rpm 
+%   \item  network 100Mbps
+%  \end{itemize}
+% 
+% \subsubsection{Nodes ask for their part, the following minimum configuration:}
+% \begin{itemize}
+%  \item CPU VT extensions
+%  \item RAM 1GB
+%  \item 40GB Disk Space
+%  \item Hard Drive IDE 5400rpm 
+%  \item  network 100Mbps
+% \end{itemize}
+% 
+% The key point is above the support of virtualization as it is they who will host the instances of
+% virtual machines.
+% \end{onehalfspace}
+%------------------------------------------------------------------------------------------------------------------------------------------------------------
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{OpenNebula}
+
+\begin{figure}[!h]
+ \center
+ \includegraphics{./images/OpenNebula-Logo.jpg}
+\end{figure}
+
+\subsubsection{Introduction}
+
+\paragraph{} OpenNebula is an open source project of type cloud computing IaaS. The project was launched in 2005, the first stable version was released in 2008. 
+The project is licensed under Apache 2.
+\paragraph{} The project aims to manage virtual machines on a large scale distributed infrastructures or cluster, and supports multiple hypervisor technologies: Xen, KVM and VMware.
+OpenNebula can also combine the local and public infrastructure, which provides high modularity for hosted environments.
+\paragraph{} OpenNebula is included in Debian Sid, Ubuntu and OpenSuse Natty. OpenNebula 2.2 Beta 1 was released on 02/06/2011.
+
+\subsubsection{History}
+\paragraph{}
+OpenNebula was first established as a research project back in 2005 by Ignacio M. Llorente and Rubén S. Montero. 
+Since its first public release of software in March 2008, it has evolved through open-source releases and now operates as an open source project.
+ OpenNebula is the result of many years of research and development in efficient and scalable management of virtual machines on large-scale distributed infrastructures in close collaboration with our user community and the main cloud computing players.
+ Many of its innovative features have been developed to address the requirements of business use cases from leading companies across multiple industries in the context of flagship international projects in cloud computing, such as RESERVOIR, StratusLab, BonFIRE, or 4CaaSt.
+ Additionally it is being used as reference open stack for cloud computing in several large research and infrastructure projects. \par
+\paragraph{}In March 2010, the main authors of OpenNebula founded C12G Labs to provide the value-added professional services that many enterprise IT shops require 
+for internal adoption and to allow the OpenNebula project to not be tied exclusively to public financing,
+ contributing to its long-term sustainability.
+ OpenNebula.org is a project now managed by C12G Labs.\par
+\begin{figure}[!h]
+ \center
+ \includegraphics{./images/platform/OpenNebula/history}
+\end{figure}
+
+\subsubsection{Architecture }
+\paragraph{}The OpenNebula internal architecture can be divided into three layers: 
+\begin{itemize}
+ \item \textbf{Tools: }management tools developed using the interfaces provided by the OpenNebula Core.
+ \item \textbf{Core: }the main virtual machine, storage, virtual network and host management components.
+ \item \textbf{Drivers: }to plug-in different virtualization, storage and monitoring technologies and Cloud services into the core.
+\end{itemize}
+
+\begin{figure}[!h]
+\center
+\includegraphics[height=7 cm]{./images/platform/OpenNebula/one-architecture} 
+\caption{OpenNebula 2.0 Architecture }
+\end{figure}
+
+\paragraph{Tools: }
+This layer contains tools distributed with OpenNebula, such as the CLI, the scheduler, the libvirt API implementation or the Cloud RESTful interfaces, and also 3rd party tools that can be easily created using the XML-RPC interface or the new OpenNebula Cloud API. 
+\begin{itemize}
+ \item \textbf{Command Line Interface: }A CLI for infrastructure administrators and users is provided with OpenNebula to manually manipulate the virtual infrastructure.
+ \item \textbf{Scheduler: }The Scheduler is an independent entity in the OpenNebula architecture, so it can be easily tailored or changed since it is decoupled from the rest of the components. It uses the XML-RPC interface provided by OpenNebula to invoke actions on virtual machines. The scheduler distributed with OpenNebula allows the definition of several resource and load aware policies. 
+\end{itemize}
+
+\paragraph{OpenNebula Core: }The core consists of a set of components to control and monitor virtual machines, virtual networks, storage and hosts. The core performs its actions (e.g. monitor a host, or cancel a VM) by invoking a suitable driver. The main functional components of OpenNebula core are: 
+\begin{itemize}
+ \item \textbf{Request Manager: }to handle client requests
+ \item \textbf{Virtual Machine Manager: }to manage and monitor of VMs
+ \item \textbf{Transfer Manager: }to manage VM images
+ \item \textbf{Virtual Network Manager: }to manage virtual networks
+ \item \textbf{Host Manager: }to manage and monitor physical resources
+ \item \textbf{Database: }persistent storage for ONE data structures
+\end{itemize}
+
+\paragraph{Drivers: }
+OpenNebula has a set of pluggable modules to interact with specific middleware (e.g. virtualization hypervisor, cloud services, file transfer mechanisms or information services), these adaptors are called Drivers. 
+
+\subsubsection{Conclusion:}
+OpenNebula is another cloud solution, flexible and mature.
+Its design is very refined, and gives great freedom to the administrator who would to deploy this solution at the cost of integration effort pushed
+ to the network and other complementary solutions for storage.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%---------------------------------------------------------------------------------------------------------------------------------------------------------------
+\newpage
+\subsection{OpenStack}
+
+\begin{figure}[!h]
+ \center
+\includegraphics{./images/OpenStack.png}
+\end{figure}
+
+
+
+\subsubsection{Introduction:}
+
+ \paragraph{}OpenStack is a project from private and public cloud computing under the Apache License.
+  Originally developed by NASA, the government agency which is responsible for most of the civil space program of the United States.
+and Rackspace Cloud, a provider of cloud computing platform 
+From July 2010, the two companies were later joined by Cloud.com, Citrix Systems,
+ Dell, enStratus, NTT Data, PEER 1,RightScale, Cloudkick, Zenoss, Limelight, Scalr, AMD, Intel, Spiceworks, Canonical and Cisco for development of OpenStack.
+
+ \paragraph{}The objective of OpenStack is to make the Cloud easy to implement and highly scalable. Ubuntu, one of the most popular Linux distributions,
+ has announced that version 11.04, dubbed Natty Narwhal, will support natively OpenStack.
+\newpage
+\subsubsection{ Overview of Community OpenStack with Broad Commercial Support:}
+
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=12cm, height=9cm]{./images/part.png}
+ \caption{commercial partner OpenStack}
+\end{figure}
+
+ 
+
+
+
+\subsubsection{Components of OpenStack:}
+There are currently three main components of OpenStack: Compute, Object Storage, and Imaging Service.
+
+\paragraph{OpenStack Object Storage(Swift):}is a system to store objects in a massively scalable large capacity system with built-in redundancy and failover.
+ Object Storage has a variety of applications, such as backing up or archiving data, serving graphics or videos (streaming data to a user’s browser), 
+serving content with a Content Delivery Network (CDN), storing secondary or tertiary static data, developing new applications with data storage integration, 
+storing data when predicting storage capacity is difficult, and creating the elasticity and flexibility of cloud-based storage for your web applications.
+
+\paragraph{OpenStack Compute (Nova):}is a cloud fabric controller, used to start up virtual instances for either a user or a group. 
+It's also used to configure networking for each instance or project that contains multiple instances for a particular project.
+ 
+\paragraph{OpenStack Imaging Service:}is a lookup and retrieval system for virtual machine images. It can be configured in three ways: 
+using OpenStack Object Store to store images; using S3 storage directly; using S3 storage with Object Store as the intermediate for S3 access.
+
+\paragraph{Example using the three Components together: }
+
+\begin{figure}[!h]
+ \center
+\includegraphics[width=10cm, height=8cm]{./images/OpenStackCore.png}
+ \caption{Components of OpenStack}
+\end{figure}
+
+
+
+
+
+For our project we use OpenStack Compute Nova.
+
+
+\subsubsection{Conclusion:}
+OpenStack solution is still young but has great potential in relation to its architecture and community and the support of its partners.
+ It is therefore a solution to supervise because we think it can become the reference of free cloud computing solutions.
+
+
+\newpage
+\subsection{Comparative table}
+
+
+\begin{tabular}{|c|p{4.5cm}|p{4cm}|p{4.5cm}|}
+\hline
+    &Eucalytus &OpenStack &OpenNebula \\ \hline
+Storage   & \textcolor{red}{very good:} A main controller walrus and storage controllers on each node.&\textcolor{red}{good:} just the basics, shared storage.&\textcolor{red}{neutral:}
+
+by default, copy the virtual machines via SSH, managing a shared directory via NFS and ability to use a complementary solution as a distributed file system.\\ \hline
+Hyperviseur    &Xen, KVM	&Xen, KVM	&Xen, KVM,VMware\\ \hline
+Network    &\textcolor{red}{limited:}not designed for deployment on a complex network.&	&\textcolor{red}{Advantages and disadvantages:}Automated network simple, manual via a complex network\\ \hline
+orientation    &private Cloud &public Cloud  &private Cloud \\ \hline
+% security    &\textcolor{red}{good:} chaque contrôleur est authentifié par clé SSH et fichiers de permission pour authentifier toutes les transactions.	&\textcolor{red}{limited:}Très bien, authentification utilisateur par clé, utilisation des Euca2ools.&Neutre, prévu pour des utilisateurs de connance (besoin d'accès au frontend pour l'administration via libvirt ou les commandes one*)\\ \hline
+install    &\textcolor{red}{problematic:}depends on the network environment and hardware problems in a heterogeneous environment.&\textcolor{red}{easy:}automated installation and documented.	&\textcolor{red}{Manual:}easy installation on the supported distributions (including Debian and Ubuntu).\\ \hline
+%Maturité    &		&	&		\\ \hline
+Documentation    &\textcolor{red}{correct:}complete but not always up to date.&\textcolor{red}{very good:}site well supplied and easy to access with the same time a wiki containing  the essential and an official documentation.	&\textcolor{red}{perfect:}documentation, references of all configuration files, examples. Lack of assistance in on a complex environment.		\\ \hline
+%Extensibilite    &		&	&		\\ \hline
+%Flexibilite    &		&	&		\\ \hline
+
+\end{tabular}
+\newpage
+% \begin{onehalfspace}
+% \paragraph{Eucalyptus:} is a mature solution that allows to install an infrastructure cloud quite easily  as long as we remain 
+% in the subject operating. However, the purpose of cloud computing is to facilitate this evolution,Eucalyptus doesn't do that.
+%   So that's why it is now abandoned for other solutions.
+% \paragraph{OpenNebula:} is another solution cloud, flexible and mature. Its design is very sleek,
+%  et laisse une grande liberté à l'administrateur qui souhaiterait déployer cette solution au prix d'un exort d'intégration poussé 
+% au réseau et à d'autres solutions complémentaires pour le stockage. Dans cette optique, OpenNebula est une solution adaptée à Grid 5000.
+% \paragraph{OpenStack:}Is a solution still young,
+% but has great potential in relation to architecture and community and the support of its partners.
+% It is therefore a solution to watch because it can become the reference solutions of free cloud.
+% \end{onehalfspace}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Justification:}
+\paragraph{What is OpenStack?}
+\subsubsection{ OpenStack Nova Compute:}
+\subsubsection{ Prerequis:}%%%%% a voir le truc de subsubsub
+\paragraph{Hardware :} OpenStack components are designed to run on standard hardware.
+\paragraph{Operating System:} OpenStack currently runs on Ubuntu, 
+the version to use for large deployments is, preferably, Ubuntu 10.04 LTS. The community members have tested to install OpenStack
+Nova on RHEL and CentOS, They have documented their approaches on the wiki OpenStack. For these other distributions GNU / Linux, 
+installation on CentOS 6 seems the most viable solution because it does not suffer from dependency problems.
+
+\paragraph{networks:} A flow rate of 1000 Mbps is suggested.
+
+\paragraph{Data Base :}For OpenStack Compute, we can install whether  MySQL or PostgreSQL
+database during the installation process of OpenStack Compute.
+
+\subsubsection{System Architecture:}
+
+Nova consists of seven main components, with the Cloud Controller component representing the global state and interacting with all other components.
+
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=12cm, height=10cm]{./images/arch.png}
+ \caption{System Architecture}
+\end{figure}
+
+
+\subsubsection{Components of nova:}
+\paragraph{}
+Nova’s Cloud Fabric is composed of the following major components:
+\begin{itemize}
+ \item API Server
+ \item Message Queue
+ \item Compute Worker
+ \item Network Controller
+ \item Volume Worker
+ \item Scheduler
+ \item Image Store
+\end{itemize}
+
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=12cm, height=10cm]{./images/components.png}
+ \caption{Service Architecture}
+\end{figure}
+
+
+
+\paragraph{nova-api (API server):}At the heart of the cloud framework is an API Server. This API Server makes command and control of the hypervisor,
+ storage, and networking programmatically available to users in realization of the definition of cloud computing.
+\paragraph{rabbit-mq:}A messaging queue brokers the interaction between compute nodes (processing), volumes (block storage),
+ the networking controllers (software which controls network infrastructure), 
+API endpoints, the scheduler (determines which physical hardware to allocate to a virtual resource), and similar components.
+\paragraph{nova-compute:}Compute workers manage computing instances on host machines. Through the API, commands are dispatched to compute workers to:
+\begin{itemize}
+ \item Run instances
+ \item Terminate instances
+ \item Reboot instances
+ \item Attach volumes
+ \item Detach volumes
+ \item Get console output
+\end{itemize}
+
+\paragraph{nova-network:}The Network Controller manages the networking resources on host machines. The API server dispatches commands through the message queue, 
+which are subsequently processed by Network Controllers. Specific operations include:
+\begin {itemize}
+ \item Allocate Fixed IP Addresses
+ \item Configuring VLANs for projects
+ \item Configuring networks for compute nodes
+\end {itemize}
+
+\paragraph{nova-volume:}Volume Workers interact with iSCSI storage to manage LVM-based instance volumes. Specific functions include:
+\begin {itemize}
+ \item Create Volumes
+ \item Delete Volumes
+ \item Establish Compute volumes
+\end {itemize}
+\paragraph{nova-scheduler:}It runs as a daemon (nova-schedule) and selects a compute / network / server volume in a pool of resources according to the algorithm 
+in place. A scheduler makes decisions based on several parameters such as load, memory, cpi, or the distance to the availability zone, etc..
+The Nova Scheduler implements a pluggable architecture. The algorithms available today are:
+\begin{itemize}
+ \item \textbf{chance:} the choice is made randomly across availability zones.
+ \item \textbf{availability zone:} similar to the previous algorithm, except that the election is made in an availability zone.
+ \item \textbf{simple:} This method selects the least loaded host to run the instance.
+\end{itemize}
+\newpage
+\subsubsection{Current and future versions of Nova Compute:}
+
+\begin{figure}[!h]
+\center 
+\includegraphics[width=13cm, height=6cm]{./images/history.png}
+ \caption{Version of Nova Compute}
+
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conclusion: }
+\paragraph{} Although OpenStack is a cloud solution rather young compared to other solutions described in the previous section. 
+We will choose the latter, because  it's embrace of openness with both open standards and open source code.
+But the important reason is it's including a large community and we don't forget the project OpenStack is considered that the solution of the future maybe,
+  because it is supported by two big organizations in the world of research: Rackspace Hosting (hosting firm has broad US) and NASA (the US Space agency).\par
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+						%Choosing the platform of the Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Platform of Smartphones}
+\paragraph{}
+The smartphone market is now dominated by four large companies are Apple, RIM, Google, Microsoft
+ and Nokia respectively that develop operating systems iOS, Blackberry OS,
+Android and Windows Phone 7 . In this section we will briefly introduce each of the systems have their advantages and disadvantages 
+to know the leader in the smartphone market and determine the system that can meet most needs of the application.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{BlackBerry}
+
+\paragraph{}
+BlackBerry was created by Research In Motion (RIM), a Canadian company. It is a very popular platform especially in North America. 
+A report from Gartner, the market in the U.S., the BlackBerry has maintained the No
+ 1 ranking with 42 percent walk. But this platform only works on BlackBerry devices.
+The BlackBerry is a wireless mobile device that includes applications for smartphone apart from his cell phone capability.
+ He is known for its ability to send e-mails where he has access to networks without any son of some mobile operators.
+Below you find the main advantages and disadvantages of the Blackberry:
+\paragraph{Advantages:}
+\begin{itemize}
+ \item \textbf{Security: }The Blackberry OS is the best operating system in terms of safety, it is particularly suitable for professionals.
+ \item \textbf{Energy consumption: }The Smartphone developed by RIM, also,
+ the advantage of consuming less energy other Smartphones competitors but also to have a superior network.
+\end{itemize}
+\paragraph{Disadvantages:}
+\begin{itemize}
+ \item \textbf{A Fee system: }One of the weaknesses of the Blackberry OS is probably the absence of Open Source that limits what applications can be used.
+Indeed, Java is available on Blackberry unlike Adobe Flash. In addition, updates of the operating system to become pay beyond a number of applications.
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Windows phone}
+\paragraph{}
+Windows Phone is a mobile operating system released in the United States October 10, 2010 and in Europe October 20, 2011. 
+It is developed by Microsoft as the successor 
+to the Windows Mobile platform that represents the mobile version of Microsoft Windows for mobile devices such as Smartphones or Pocket PC.
+the last one is the improved version of Windows Mobile 6.5, it is for the general public rather than the business market.With Windows Phone 7, 
+Microsoft offers a new user interface called Metro,which enables integration of applications in the interface further with
+Hubs, icons vary depending on the situation.
+\paragraph{Advantages:}
+\begin{itemize}
+ \item \textbf{User Interface: }Multilingual interface very clean and smoothness with nice visual effects.
+ \item \textbf{The Support of the giant Microsoft: }Windows phone 7 has a Support for Microsoft, an excellent integration of Office Mobile, integration of social media and integration of "cloud" (Skydrive, Windows Live, Xbox Live) without forgetting the wireless synchronization.
+\end{itemize}
+
+\paragraph{Disadvantages: }
+\begin{itemize}
+ \item \textbf{Absence of several basic features: }The last baby at Microsoft has some weaknesses such as no integrated file manager, a video call, the player DivX, Xvid and Flash player. In addition, it has few third party applications and to this day is not multitasking. On the other hand, it does not allow copy / paste or file transfer via Bluetooth and the USB mass storage.
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{iOS}
+\paragraph{}
+iOS formerly iPhone OS, is the mobile operating system developed by Apple for iPhone, iPod touch and the iPad. It is derived from Mac OS X operating system from the famous Macintoshes) which it shares foundations.
+\paragraph{Advantages:}
+\begin{itemize}
+ \item \textbf{Ergonomics: }The interface and general ergonomics of IOS reflects perfectly image of Apple: simple but elegant.
+ \item \textbf{Ease of use: }Getting started is facilitated due to an intuitive management of the operating system icons and perfectly clear and easy to identify. In addition, IOS can be updated regularly.
+\end{itemize}
+\paragraph{Disadvantages:}
+\begin{itemize}
+ \item \textbf{Proprietary system: }The main weakness of IOS and products of the trademark
+Apple usually resides in the fact that many of features can be used only between the same reference IPhone. For example, the user can transfer a file via Bluetooth, on his IPhone, only in other IPhone of the same generation as his..
+ \item \textbf{The cost: } like all Apple products, this Smartphone running the IOS operating system is more expensive than other competing products.
+\end{itemize}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Android}
+\paragraph{} Android was developed by the Open Handset Alliance. Android was announced in 2007. In addition, in 2008, he became an open-source platform.
+ According to Google, which is a major distributor, Android platform is a powerful, modern, safe and open. We can say Android is a complete platform for smartphones, PDAs and mobile devices. it is
+composed of an operating system, libraries 'middleware' and many most applications emphasizing Google's services such as Google
+Search, Google Maps or Gmail ...
+Android is based on the Linux kernel, the libraries 'middleware' which composes are written
+C / C + + and Java in the Framework.
+\paragraph{Advantages: }
+According to the latest studies and statistics done on Android, Google offers the Most upgradeable system and promising several advantages.
+ The most important ones:
+\begin{itemize}
+ \item \textbf{Open Source: }Android supplies a free development kit (SDK) that allows to develop applications on that platform.
+ \item \textbf{Language development:} which is the Java, There are many Java developers, so many people can develop for Android.
+	    \begin{itemize}
+	     \item Either by development-based layout and graphic components (view graphic)
+	     \item Either by defining XML file (vision developer).
+	    \end{itemize}
+
+ \item \textbf{Popularity: }The Android platform has a very popular and enjoys an active community.
+ \item \textbf{The number of applications on Android Market: }Android At Mobile World Congress, Activations Up 250\%, Android Market Triples Its Number Of Applications.The immense growth of Android is good for developers and users alike and shows just how popular the open ecosystem has become in the mobile market.
+\end{itemize}
+
+\paragraph{Disadvantages: }
+\begin{itemize}
+ \item \textbf{Slow update: }The update of the system can take a long time because of the large number of manufacturers and operators. 
+Each manufacturer must adjust the update to each of its models, therefore the user is forced to wait for the update its own Smartphone.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\subsection{Comparison between different platforms}
+
+\begin{figure}[!h]
+    \begin{center}
+    \includegraphics[width=10cm]{./images/mobile/compare}
+    \caption{Superbe image}
+    \end{center}
+
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Justification:}
+
+\paragraph{What's Android ?}
+
+Android is a software stack for mobile devices that includes an operating system, middleware and key applications. The Android SDK provides the tools
+and APIs necessary to begin developing application on the Android platform using the java programming language.
+\paragraph{Features:}
+\begin{itemize}
+ \item \textbf{Application framework: }enabling reuse and replacement of components
+ \item \textbf{Dalvik virtual machine: }optimized for mobile devices
+ \item \textbf{Optimized graphics: }powered by a custom 2D graphics library; 3D graphics based on the OpenGl ES 1.0 specification (hardware acceleration optional)
+engine
+\item \textbf{SQLite: }for structured data storage
+\item \textbf{GSM Telephony: }hardware depenndent 
+\item \textbf{Media support: }for common audio,video, and still imafe formats (MPEG4, H.264, MP3, AAC, AMR, JPG, PNG, GIF)
+\item \textbf{Bluetouth, EDGE,3G, and WI-FI: }hardware dependent
+\item \textbf{Camera, GPS, compass, and accelerometer: }hardware dependent
+\item \textbf{Rich development environment: }including a device emulator, tools for debugging, memory and performance profiling, and a plugin for the Eclipse
+IDE
+\item \textbf{Android Architecture: }The following diagram shows the major components of the Android operating system. Each section is described in more detail below
+\begin{figure}[!h]
+ \center
+ \includegraphics[width=12cm, height=10cm]{./images/mobile/arch}
+ \caption{Androide Architecture}
+\end{figure}
+ 
+ \begin{enumerate}
+   \item \textbf{Applications: } Android will ship a set of core applications including an email client, SMS program, calendar, maps, browser, contacts,
+and others. All applications are written using the java programming language.
+   \item \textbf{Applications Framework: }By providing an open development platform, Android offers developers the ability
+to build extremely rich and innovative applications. Developers are free to take advantage of the device hardware, access location information, run background
+services, set alarms, add notifications to the status bar, and much, much more. Developers have full access to the same framework APIs used by the core applications.
+The application architecture is designed to simplify the reuse of components; any application can publish its capabilities and any other application may then 
+make use of those capabilities (subject to security constraints enforced by the framework). This same mechanism allows components to be replaced by the user.
+\paragraph{} Underlying all application is a set of services and systems, including:
+    \begin{itemize}
+	  \item A rich and extensible set of Views that can be used to build an application, including lists, grids, text boxes, buttons, and even an embeddable web
+	  browser
+	  \item Content Providers that enable applications to access data from other applications (such as Contacts), or to share their own data
+	  \item A resource Manager, providing access ton non-code ressources such as localized strings, graphics, and layout files
+	  \item A Notification Manager that enables all applications to display custom alerts in the status bar
+	  \item An Activity Manager that manages the lifecycle of applications and provides a common navigation backstack
+	  
+    \end{itemize}
+
+\item \textbf{Libraries in Android:}
+Android includes a set of C/C++ libraries used by various components of the Android system. These capabilities are exposed to developers through the Android application
+framework. Some of the core libraries are listed below:
+    \begin{itemize}
+     \item System C library-a BSD-derived implementation of the standard C system library(libc), tuned for embedded Linux-based devices
+     \item Media Libraries- based on PacketVideo's OpenCore; the libraries support playback and recording of many popular audio and video formats, as well as
+static image files, including MPEG4, H.264, MP3, AAC,AMR, JPG, and PNG
+     \item Surface Manager- manages access to the display subsystem and seamlessly composites 2D and 3D graphic layers from multiple applications
+     \item LibWebCore- a modern web browser engine which powers both the Android browser and an embeddable web view
+     \item SGL-the underlying 2D graphics engine
+     \item 3D libraries- an implementation based on OpenGL ES 1.0 APIs; the libraries use either hardware 3D acceleration (where available) or the included,
+highly optimized 3D software rasterizer 
+     \item FreeType-bitmap and vector font rendering 
+     \item SQLite- a powerful and lightweight relational database engine available to all applications
+    \end{itemize}
+
+\item \textbf{Android Runtime:}
+      \paragraph{}Android includes a set of core libraries thet provides most of the provides most of the functionality available in the core libraries of 
+the java programming language.
+      \paragraph{}Every Android application runs in its own process, with its own instance of the Dalvik virtual machine. Dalvik has been written so that
+a device can run multiple VMs efficiently. The Dalvik VM executes files in the Dalvik Executable (.dex) format which is optimized for minimal memory footprint.
+The VM is register-based, and runs classes compiled by a java language compiler that have been transformed into the .dex format by the included ``dx'' tool.
+      \paragraph{}The Davlik VM relies on the Linux Kernel for underlying functionality such as threading and low-level memory management.
+
+  \end{enumerate}
+
+
+\end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Conclusion: }
+\paragraph{} In the smartphone market almost all major brands of Mobile have released one or more models of android phone,, brands like Samsung or HTC.
+Android was chosen because (almost) everything is free start with the SDK that includes an emulator (which reproduces the exact behavior of the phone) is
+ a free unlike other platform and we also offer many possibilities equal or superior to another platform.\par

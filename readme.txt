@@ -1,1 +1,1 @@
- ce dossier représenté mes rapports en LateX
+ ce dossier représente mes rapports en LateX
